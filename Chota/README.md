@@ -1,5 +1,5 @@
-# Milligram
+# Chota
 
-- https://milligram.io
-- https://github.com/milligram/milligram
-- Version 1.4.1
+- https://jenil.github.io/chota
+- https://github.com/jenil/chota
+- Version 0.8.0
