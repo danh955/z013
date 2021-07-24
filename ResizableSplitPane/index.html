@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="a" class="split split-horizontal">
+            <div id="c" class="split content">
+            </div>
+            <div id="d" class="split content">
+                This is from http://jsfiddle.net/aguiguy/y2x7fdnu
+            </div>
+        </div>
+        <div id="b" class="split split-horizontal">
+            <div id="e" class="split content">
+                The<br/>vertical<br/>height<br/>of<br/>this<br/>text<br/>is<br/>high.
+            </div>
+            <div id="f" class="split content">
+                This is using Split.js at https://github.com/nathancahill/split/tree/master/packages/splitjs
+            </div>
+        </div>
+
+        <script>
+            Split(['#a', '#b'], {
+                sizes: [70, 30],
+                gutterSize: 7,
+                cursor: 'col-resize'
+            })
+
+            Split(['#c', '#d'], {
+                direction: 'vertical',
+                sizes: [25, 75],
+                gutterSize: 7,
+                cursor: 'row-resize'
+            })
+
+            Split(['#e', '#f'], {
+                direction: 'vertical',
+                sizes: [75, 25],
+                gutterSize: 7,
+                cursor: 'row-resize'
+            })
+        </script>
+    </body>
+</html>
