@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classless.css Test</title>
+    <!-- <link rel="stylesheet" href="css/classless-tiny.css" /> -->
+    <!-- <link rel="stylesheet" href="css/classless.css" /> -->
+    <link rel="stylesheet" href="css/classless-custom.css" />
+    <!-- <link rel="stylesheet" href="css/classless-custom-min.css" /> -->
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Brand</li>
+                <li><a href="#">Home</a></li>
+                <li class="float-right sticky"><a href="#Login">Login</a></li>
+                <li><a href="#">Dog ▾</a>
+                    <ul>
+                        <li><a href="#LabradorRetriever">Labrador Retriever</a></li>
+                        <li><a href="#GermanShepherd">German Shepherd</a></li>
+                        <li><a href="#GoldenRetriever">Golden Retriever</a></li>
+                        <li><a href="#Beagle">Beagle</a></li>
+                        <li><a href="#Bulldog">Bulldog</a></li>
+                        <li><a href="#YorkshireTerrier">Yorkshire Terrier</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cats ▾</a>
+                    <ul>
+                        <li><a href="#Polydactyl">Polydactyl</a></li>
+                        <li><a href="#Snowshoe">Snowshoe</a></li>
+                        <li><a href="#Calico">Calico</a></li>
+                        <li><a href="#BritishShorthair">British Shorthair</a></li>
+                        <li><a href="#Siamese">Siamese</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+
+                <li class="float-right"><a href="#About">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table class="gameBoard">
+            <tbody>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>&bull;</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>44</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+
+        <table class="classlessStyled">
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">CSS File</th>
+                    <th rowspan="2"></th>
+                    <th colspan="5">Browser Support</th>
+                    <th rowspan="2">Dependency</th>
+                    <th rowspan="2">License</th>
+                </tr>
+                <tr>
+                    <td><abbr title="Lines of Code">LOC</abbr></td>
+                    <td>Size <span
+                            data-tooltip="Size of the readable, non-minified code (these tiny libs don't need minimizers)"><b>ⓘ</b></span>
+                    </td>
+                    <td><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="20"></td>
+                    <td><img src="https://edent.github.io/SuperTinyIcons/images/svg/firefox.svg" width="20"></td>
+                    <td><img src="https://edent.github.io/SuperTinyIcons/images/svg/safari.svg" width="20"></td>
+                    <td><img src="https://edent.github.io/SuperTinyIcons/images/svg/edge.svg" width="20"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg"
+                            width="20"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Classless</td>
+                    <td>400</td>
+                    <td>11.2 kB</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✘</td>
+                    <td>none</td>
+                    <td>MIT</td>
+                </tr>
+                <tr>
+                    <td>Classless Tiny</td>
+                    <td>91</td>
+                    <td>2.7 kB</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>?</td>
+                    <td>✔</td>
+                    <td>✘</td>
+                    <td>none</td>
+                    <td>MIT</td>
+                </tr>
+                <tr>
+                    <td><a href="http://getskeleton.com/">Skeleton</a></td>
+                    <td>400</td>
+                    <td>11.2 kB</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>?</td>
+                    <td>✔</td>
+                    <td>normalize</td>
+                    <td>MIT</td>
+                </tr>
+                <tr>
+                    <td><a href="https://milligram.io/">Milligram</a></td>
+                    <td>600</td>
+                    <td>10.3 kB</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>?</td>
+                    <td>normalize 8.0</td>
+                    <td>MIT</td>
+                </tr>
+                <tr>
+                    <td><a href="https://oxal.org/projects/sakura/">Sakura</a></td>
+                    <td>165</td>
+                    <td>3.3 kB</td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>(normalize)</td> <!-- Sakura only recommends normalize -->
+                    <td>MIT</td>
+                </tr>
+            </tbody>
+        </table>
+        <figcaption>A more complex table. Still no classes.<br/>  <b>[ I added the "<i>classlessStyled</i>" class on the table tag. This way I can style other tables differently. ]</b></figcaption>
+    </main>
+
+    <footer>
+        Footer goes here.
+    </footer>
+</body>
+
+</html>
