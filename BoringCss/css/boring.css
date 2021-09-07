@@ -1,0 +1,39 @@
+@import 'normalize.css';
+
+/* Navigation bar */
+nav.b-bar a, nav.b-bar button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+    nav.b-bar a:hover, nav.b-bar button:hover {
+        background: #ddd;
+    }
+
+nav.b-bar > div {
+    position: relative;
+    display: inline-block;
+}
+
+    nav.b-bar > div > div {
+        display: none;
+        position: absolute;
+        min-width: 10rem;
+        background-color: #fafafa;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    nav.b-bar > div:hover > div {
+        display: block;
+    }
+
+    nav.b-bar > div > div > a {
+        display: block;
+    }

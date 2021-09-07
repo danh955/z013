@@ -1,0 +1,9 @@
+﻿html, body {
+    font-family: Verdana,sans-serif;
+}
+
+    body > header {
+        padding-left: 1rem;
+        background-color: lightcyan;
+        border-bottom: 1px solid #eee;
+    }
