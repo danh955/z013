@@ -1,0 +1,13 @@
+﻿.table {
+    width: auto;
+    cursor: default;
+}
+
+    .mytable td, .table th {
+        text-align: right;
+        padding: 5px;
+    }
+
+    .mytable tr td:first-child {
+        text-align: left;
+    }

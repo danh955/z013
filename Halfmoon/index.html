@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="path/to/fav.png">
+    <link href="css/fa/css/font-awesome.min.css" rel="stylesheet">
+    <title>Halfmoon</title>
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
+        <!-- data-sidebar-type="full-height overlayed-sm-and-down" -->
+        <div class="sticky-alerts"></div>
+        <nav class="navbar">
+            <div class="container-xl">
+                <div class="navbar-content">
+                    <button class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                </div>
+                <ul class="navbar-nav d-none d-md-flex">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Docs" class="nav-link">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#About" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div class="ml-auto">
+                    <button class="btn btn-action" type="button" onclick="halfmoon.toggleDarkMode()" aria-label="Toggle dark mode">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-brand">
+                    <img src="https://dummyimage.com/70x30/90EE90/000.jpg&text=Z013" alt="...">
+                </a>
+                <div class="sidebar-divider"></div>
+                <a href="#" class="sidebar-link">Home</a>
+                <a href="#Docs" class="sidebar-link">Docs</a>
+                <a href="#About" class="sidebar-link">About</a>
+            </div>
+        </div>
+        <div class="content-wrapper container-xl">
+            <form class="form-inline">
+                <div class="form-group pt-5">
+                    <div class="text-nowrap pl-10">
+                        <b>Frequency:</b>
+                        <select id="Frequency">
+                            <option value="m">Monthly</option>
+                            <option value="q">Quarterly</option>
+                            <option value="h">Half-Yearly</option>
+                            <option selected="selected" value="y">Yearly</option>
+                        </select>
+                    </div>
+                    <div class="text-nowrap pl-10">
+                        <b>End:</b>
+                        <select id="EndYear">
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                        </select>
+                        <select id="EndMonth">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option selected="selected">September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <table class="mytable table table-inner-bordered  table-hover">
+                <thead>
+                    <tr><th>Symbol</th><th>2012</th><th>2013</th><th>2014</th><th>2015</th><th>2016</th><th>2017</th><th>2018</th><th>2019</th><th>2020</th><th>2021</th><th>Score</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>ACN</td><td>12.6%</td><td>10.3%</td><td>11.6%</td><td>26.1%</td><td>9.6%</td><td>20.0%</td><td>11.3%</td><td>16.5%</td><td>15.9%</td><td>34.4%</td><td>1023</td></tr>
+                    <tr><td>ADBE</td><td>13.6%</td><td>37.2%</td><td>22.7%</td><td>20.9%</td><td>17.5%</td><td>38.6%</td><td>28.7%</td><td>11.6%</td><td>37.8%</td><td>22.0%</td><td>1023</td></tr>
+                    <tr><td>AEE</td><td>7.7%</td><td>13.5%</td><td>18.0%</td><td>7.0%</td><td>15.6%</td><td>22.0%</td><td>6.9%</td><td>19.0%</td><td>6.6%</td><td>2.8%</td><td>1023</td></tr>
+                    <tr><td>AMT</td><td>28.0%</td><td>6.4%</td><td>19.9%</td><td>6.3%</td><td>14.5%</td><td>20.1%</td><td>9.7%</td><td>29.9%</td><td>6.7%</td><td>14.0%</td><td>1023</td></tr>
+                    <tr><td>APH</td><td>21.5%</td><td>25.6%</td><td>21.3%</td><td>7.6%</td><td>18.6%</td><td>24.9%</td><td>3.7%</td><td>11.7%</td><td>12.0%</td><td>25.5%</td><td>1023</td></tr>
+                    <tr><td>AWK</td><td>19.2%</td><td>16.6%</td><td>21.8%</td><td>9.2%</td><td>24.1%</td><td>17.4%</td><td>2.9%</td><td>29.5%</td><td>19.4%</td><td>12.1%</td><td>1023</td></tr>
+                    <tr><td>BANFP</td><td>10.6%</td><td>7.8%</td><td>9.6%</td><td>1.7%</td><td>10.5%</td><td>1.6%</td><td>6.9%</td><td>11.0%</td><td>5.3%</td><td>5.2%</td><td>1023</td></tr>
+                    <tr><td>BLL</td><td>20.0%</td><td>13.4%</td><td>24.8%</td><td>6.7%</td><td>11.8%</td><td>11.0%</td><td>5.1%</td><td>36.5%</td><td>22.0%</td><td>2.8%</td><td>1023</td></tr>
+                    <tr><td>BMI</td><td>25.1%</td><td>18.9%</td><td>9.9%</td><td>7.3%</td><td>7.0%</td><td>27.5%</td><td>11.8%</td><td>16.0%</td><td>22.0%</td><td>27.6%</td><td>1023</td></tr>
+                    <tr><td>BR</td><td>5.8%</td><td>36.6%</td><td>21.7%</td><td>27.9%</td><td>9.7%</td><td>26.2%</td><td>27.6%</td><td>8.2%</td><td>10.7%</td><td>19.5%</td><td>1023</td></tr>
+                    <tr><td>CCI</td><td>38.0%</td><td>12.2%</td><td>4.0%</td><td>12.3%</td><td>9.8%</td><td>18.4%</td><td>5.3%</td><td>24.4%</td><td>13.9%</td><td>10.2%</td><td>1023</td></tr>
+                    <tr><td>CDNS</td><td>12.5%</td><td>2.5%</td><td>27.7%</td><td>19.2%</td><td>13.1%</td><td>40.7%</td><td>3.2%</td><td>31.8%</td><td>40.2%</td><td>26.9%</td><td>1023</td></tr>
+                    <tr><td>CPK</td><td>12.6%</td><td>16.3%</td><td>27.0%</td><td>9.3%</td><td>20.1%</td><td>21.9%</td><td>0.4%</td><td>17.6%</td><td>4.4%</td><td>24.3%</td><td>1023</td></tr>
+                    <tr><td>CPRT</td><td>24.4%</td><td>10.7%</td><td>3.6%</td><td>7.6%</td><td>31.0%</td><td>27.7%</td><td>25.8%</td><td>40.8%</td><td>25.1%</td><td>20.5%</td><td>1023</td></tr>
+                    <tr><td>CRL</td><td>13.5%</td><td>24.2%</td><td>22.1%</td><td>3.2%</td><td>14.0%</td><td>34.7%</td><td>4.5%</td><td>6.3%</td><td>42.9%</td><td>44.2%</td><td>1023</td></tr>
+                    <tr><td>CTAS</td><td>29.8%</td><td>23.4%</td><td>27.6%</td><td>23.2%</td><td>13.7%</td><td>29.3%</td><td>18.9%</td><td>33.1%</td><td>15.4%</td><td>23.2%</td><td>1023</td></tr>
+                    <tr><td>DG</td><td>18.4%</td><td>15.9%</td><td>7.8%</td><td>8.3%</td><td>3.1%</td><td>15.4%</td><td>28.3%</td><td>31.3%</td><td>23.8%</td><td>1.3%</td><td>1023</td></tr>
+                    <tr><td>DGX</td><td>4.6%</td><td>5.6%</td><td>7.2%</td><td>8.5%</td><td>18.8%</td><td>14.3%</td><td>2.2%</td><td>9.1%</td><td>18.9%</td><td>14.6%</td><td>1023</td></tr>
+                    <tr><td>DHR</td><td>6.7%</td><td>28.4%</td><td>10.7%</td><td>14.3%</td><td>10.5%</td><td>15.4%</td><td>7.8%</td><td>28.3%</td><td>40.2%</td><td>23.4%</td><td>1023</td></tr>
+                    <tr><td>DPZ</td><td>27.0%</td><td>40.1%</td><td>25.4%</td><td>17.7%</td><td>37.7%</td><td>8.4%</td><td>32.5%</td><td>2.0%</td><td>28.8%</td><td>21.8%</td><td>1023</td></tr>
+                    <tr><td>DTE</td><td>19.6%</td><td>13.6%</td><td>18.9%</td><td>2.9%</td><td>17.8%</td><td>15.8%</td><td>5.0%</td><td>14.3%</td><td>0.7%</td><td>9.3%</td><td>1023</td></tr>
+                    <tr><td>EL</td><td>20.9%</td><td>14.9%</td><td>6.6%</td><td>7.7%</td><td>8.9%</td><td>23.3%</td><td>19.5%</td><td>27.0%</td><td>15.8%</td><td>29.6%</td><td>1023</td></tr>
+                    <tr><td>EXPO</td><td>12.4%</td><td>27.9%</td><td>6.4%</td><td>23.4%</td><td>11.4%</td><td>23.5%</td><td>27.6%</td><td>21.4%</td><td>9.6%</td><td>38.9%</td><td>1023</td></tr>
+                    <tr><td>FEX</td><td>8.6%</td><td>25.2%</td><td>12.8%</td><td>1.5%</td><td>4.2%</td><td>19.1%</td><td>3.0%</td><td>8.6%</td><td>3.7%</td><td>27.7%</td><td>1023</td></tr>
+                    <tr><td>FICO</td><td>41.4%</td><td>18.8%</td><td>8.2%</td><td>32.6%</td><td>23.5%</td><td>16.9%</td><td>24.7%</td><td>36.6%</td><td>22.3%</td><td>0.8%</td><td>1023</td></tr>
+                    <tr><td>FTCS</td><td>9.8%</td><td>24.7%</td><td>13.6%</td><td>6.7%</td><td>3.1%</td><td>21.0%</td><td>6.4%</td><td>11.2%</td><td>6.8%</td><td>20.9%</td><td>1023</td></tr>
+                    <tr><td>GOOG</td><td>12.9%</td><td>34.0%</td><td>7.9%</td><td>21.6%</td><td>9.4%</td><td>22.8%</td><td>5.6%</td><td>14.5%</td><td>22.3%</td><td>41.6%</td><td>1023</td></tr>
+                    <tr><td>GOOGL</td><td>12.9%</td><td>34.0%</td><td>9.2%</td><td>23.0%</td><td>9.0%</td><td>21.6%</td><td>5.3%</td><td>13.4%</td><td>22.1%</td><td>41.8%</td><td>1023</td></tr>
+                    <tr><td>HD</td><td>43.1%</td><td>22.8%</td><td>21.8%</td><td>22.7%</td><td>0.7%</td><td>28.1%</td><td>7.7%</td><td>27.0%</td><td>14.2%</td><td>22.6%</td><td>1023</td></tr>
+                    <tr><td>ICE</td><td>0.9%</td><td>32.0%</td><td>8.7%</td><td>18.5%</td><td>7.9%</td><td>19.2%</td><td>15.2%</td><td>19.4%</td><td>1.4%</td><td>26.8%</td><td>1023</td></tr>
+                    <tr><td>ICLR</td><td>28.6%</td><td>41.9%</td><td>23.0%</td><td>17.6%</td><td>20.4%</td><td>32.5%</td><td>13.9%</td><td>6.0%</td><td>18.5%</td><td>31.9%</td><td>1023</td></tr>
+                    <tr><td>IEX</td><td>18.3%</td><td>39.6%</td><td>9.0%</td><td>4.0%</td><td>12.7%</td><td>33.5%</td><td>0.1%</td><td>19.5%</td><td>9.9%</td><td>18.6%</td><td>1023</td></tr>
+                    <tr><td>IGSB</td><td>2.7%</td><td>0.8%</td><td>1.0%</td><td>0.9%</td><td>1.6%</td><td>1.3%</td><td>0.1%</td><td>6.9%</td><td>4.6%</td><td>1.0%</td><td>1023</td></tr>
+                    <tr><td>INTU</td><td>10.7%</td><td>17.7%</td><td>19.7%</td><td>10.6%</td><td>11.5%</td><td>28.8%</td><td>29.1%</td><td>18.7%</td><td>18.8%</td><td>40.5%</td><td>1023</td></tr>
+                    <tr><td>IUSG</td><td>11.1%</td><td>22.5%</td><td>13.8%</td><td>8.1%</td><td>2.1%</td><td>21.6%</td><td>9.7%</td><td>12.2%</td><td>18.9%</td><td>25.4%</td><td>1023</td></tr>
+                    <tr><td>LH</td><td>1.0%</td><td>16.0%</td><td>7.7%</td><td>11.0%</td><td>2.1%</td><td>18.5%</td><td>4.3%</td><td>2.6%</td><td>17.5%</td><td>27.1%</td><td>1023</td></tr>
+                    <tr><td>LII</td><td>36.6%</td><td>36.8%</td><td>13.6%</td><td>33.9%</td><td>10.0%</td><td>24.5%</td><td>10.4%</td><td>15.7%</td><td>10.2%</td><td>9.0%</td><td>1023</td></tr>
+                    <tr><td>MA</td><td>24.8%</td><td>35.9%</td><td>14.8%</td><td>16.0%</td><td>8.2%</td><td>28.6%</td><td>25.2%</td><td>29.0%</td><td>4.6%</td><td>17.3%</td><td>1023</td></tr>
+                    <tr><td>MLAB</td><td>23.9%</td><td>30.7%</td><td>9.5%</td><td>32.2%</td><td>12.0%</td><td>21.2%</td><td>13.1%</td><td>20.0%</td><td>13.1%</td><td>14.1%</td><td>1023</td></tr>
+                    <tr><td>MMC</td><td>12.6%</td><td>27.6%</td><td>17.6%</td><td>4.5%</td><td>14.0%</td><td>23.2%</td><td>6.3%</td><td>19.7%</td><td>1.6%</td><td>35.1%</td><td>1023</td></tr>
+                    <tr><td>MSFT</td><td>9.2%</td><td>21.8%</td><td>26.7%</td><td>13.1%</td><td>14.5%</td><td>29.7%</td><td>23.5%</td><td>26.7%</td><td>30.0%</td><td>31.8%</td><td>1023</td></tr>
+                    <tr><td>NEE</td><td>22.5%</td><td>20.2%</td><td>18.0%</td><td>5.2%</td><td>22.1%</td><td>19.8%</td><td>12.5%</td><td>29.4%</td><td>20.3%</td><td>7.8%</td><td>1023</td></tr>
+                    <tr><td>PAYX</td><td>13.7%</td><td>26.2%</td><td>13.0%</td><td>12.0%</td><td>9.6%</td><td>16.2%</td><td>5.7%</td><td>24.1%</td><td>1.6%</td><td>31.8%</td><td>1023</td></tr>
+                    <tr><td>PFM</td><td>12.6%</td><td>17.9%</td><td>10.7%</td><td>0.1%</td><td>8.1%</td><td>13.6%</td><td>6.7%</td><td>12.7%</td><td>2.7%</td><td>20.6%</td><td>1023</td></tr>
+                    <tr><td>PLD</td><td>16.2%</td><td>16.7%</td><td>7.1%</td><td>6.0%</td><td>21.0%</td><td>21.7%</td><td>2.7%</td><td>28.5%</td><td>13.8%</td><td>24.7%</td><td>1023</td></tr>
+                    <tr><td>PNQI</td><td>9.0%</td><td>36.9%</td><td>8.2%</td><td>13.5%</td><td>9.1%</td><td>23.8%</td><td>4.7%</td><td>9.2%</td><td>35.7%</td><td>14.5%</td><td>1023</td></tr>
+                    <tr><td>POOL</td><td>31.7%</td><td>23.8%</td><td>10.2%</td><td>27.8%</td><td>13.1%</td><td>24.3%</td><td>18.1%</td><td>30.5%</td><td>41.2%</td><td>22.0%</td><td>1023</td></tr>
+                    <tr><td>QQEW</td><td>4.6%</td><td>27.9%</td><td>17.4%</td><td>6.4%</td><td>3.4%</td><td>20.5%</td><td>3.6%</td><td>16.0%</td><td>19.1%</td><td>23.9%</td><td>1023</td></tr>
+                    <tr><td>QQQ</td><td>11.7%</td><td>22.6%</td><td>19.5%</td><td>11.5%</td><td>4.2%</td><td>23.9%</td><td>11.1%</td><td>14.6%</td><td>27.3%</td><td>25.2%</td><td>1023</td></tr>
+                    <tr><td>RMD</td><td>29.5%</td><td>24.1%</td><td>3.0%</td><td>11.2%</td><td>5.6%</td><td>30.4%</td><td>21.7%</td><td>29.4%</td><td>23.7%</td><td>24.3%</td><td>1023</td></tr>
+                    <tr><td>RSG</td><td>2.8%</td><td>17.8%</td><td>15.4%</td><td>14.7%</td><td>19.0%</td><td>20.8%</td><td>12.3%</td><td>18.5%</td><td>2.7%</td><td>31.2%</td><td>1023</td></tr>
+                    <tr><td>SKYY</td><td>0.3%</td><td>25.4%</td><td>9.3%</td><td>9.9%</td><td>12.3%</td><td>21.7%</td><td>15.8%</td><td>10.6%</td><td>24.7%</td><td>29.3%</td><td>1023</td></tr>
+                    <tr><td>SNPS</td><td>16.7%</td><td>11.6%</td><td>11.1%</td><td>18.0%</td><td>15.7%</td><td>31.4%</td><td>3.4%</td><td>34.0%</td><td>36.5%</td><td>25.9%</td><td>1023</td></tr>
+                    <tr><td>SPGI</td><td>24.8%</td><td>25.8%</td><td>24.1%</td><td>3.6%</td><td>25.0%</td><td>23.0%</td><td>15.0%</td><td>30.1%</td><td>20.7%</td><td>25.3%</td><td>1023</td></tr>
+                    <tr><td>TMO</td><td>18.3%</td><td>38.0%</td><td>17.3%</td><td>10.5%</td><td>11.4%</td><td>24.4%</td><td>17.3%</td><td>22.8%</td><td>36.3%</td><td>18.4%</td><td>1023</td></tr>
+                    <tr><td>TMUS</td><td>16.7%</td><td>39.0%</td><td>5.0%</td><td>23.0%</td><td>23.8%</td><td>16.8%</td><td>12.8%</td><td>17.1%</td><td>24.6%</td><td>6.5%</td><td>1023</td></tr>
+                    <tr><td>TTEK</td><td>15.9%</td><td>0.8%</td><td>3.1%</td><td>1.5%</td><td>30.9%</td><td>22.6%</td><td>26.0%</td><td>25.1%</td><td>14.0%</td><td>36.4%</td><td>1023</td></tr>
+                    <tr><td>V</td><td>33.3%</td><td>30.0%</td><td>19.2%</td><td>22.8%</td><td>6.7%</td><td>25.5%</td><td>20.7%</td><td>23.4%</td><td>2.2%</td><td>19.8%</td><td>1023</td></tr>
+                    <tr><td>VONE</td><td>12.9%</td><td>22.3%</td><td>14.0%</td><td>4.0%</td><td>3.9%</td><td>19.0%</td><td>6.4%</td><td>12.4%</td><td>9.9%</td><td>26.3%</td><td>1023</td></tr>
+                    <tr><td>VONG</td><td>11.5%</td><td>22.0%</td><td>14.3%</td><td>7.9%</td><td>2.1%</td><td>22.8%</td><td>9.6%</td><td>14.5%</td><td>22.8%</td><td>24.4%</td><td>1023</td></tr>
+                    <tr><td>VRSN</td><td>13.4%</td><td>31.7%</td><td>9.2%</td><td>25.9%</td><td>4.1%</td><td>21.9%</td><td>24.6%</td><td>25.0%</td><td>0.4%</td><td>6.9%</td><td>1023</td></tr>
+                    <tr><td>VTHR</td><td>12.9%</td><td>22.3%</td><td>13.4%</td><td>4.1%</td><td>3.6%</td><td>19.2%</td><td>6.1%</td><td>11.6%</td><td>9.3%</td><td>26.6%</td><td>1023</td></tr>
+                    <tr><td>VTWO</td><td>10.5%</td><td>26.6%</td><td>7.5%</td><td>0.4%</td><td>4.0%</td><td>21.7%</td><td>1.9%</td><td>4.8%</td><td>0.2%</td><td>31.3%</td><td>1023</td></tr>
+                    <tr><td>WST</td><td>29.1%</td><td>45.0%</td><td>6.5%</td><td>15.3%</td><td>21.7%</td><td>25.5%</td><td>4.8%</td><td>26.7%</td><td>47.3%</td><td>32.7%</td><td>1023</td></tr>
+                    <tr><td>XLNX</td><td>0.3%</td><td>29.6%</td><td>0.3%</td><td>9.2%</td><td>8.9%</td><td>32.5%</td><td>15.4%</td><td>7.2%</td><td>24.8%</td><td>23.7%</td><td>1023</td></tr>
+                    <tr><td>GNTX</td><td>-71.6%</td><td>43.2%</td><td>11.8%</td><td>2.1%</td><td>5.2%</td><td>14.5%</td><td>9.5%</td><td>26.5%</td><td>0.4%</td><td>25.0%</td><td>1022</td></tr>
+                    <tr><td>MCD</td><td>-3.8%</td><td>13.0%</td><td>0.4%</td><td>19.4%</td><td>3.3%</td><td>34.4%</td><td>8.0%</td><td>12.2%</td><td>9.9%</td><td>15.6%</td><td>1022</td></tr>
+                    <tr><td>MSCI</td><td>-23.9%</td><td>33.9%</td><td>12.6%</td><td>31.3%</td><td>17.5%</td><td>32.5%</td><td>22.8%</td><td>36.7%</td><td>33.6%</td><td>41.8%</td><td>1022</td></tr>
+                    <tr><td>NDAQ</td><td>-4.8%</td><td>34.1%</td><td>19.3%</td><td>26.5%</td><td>11.1%</td><td>13.7%</td><td>17.8%</td><td>14.8%</td><td>18.9%</td><td>39.6%</td><td>1022</td></tr>
+                    <tr><td>NICE</td><td>-7.5%</td><td>15.8%</td><td>5.3%</td><td>34.9%</td><td>7.9%</td><td>20.6%</td><td>21.4%</td><td>32.9%</td><td>30.9%</td><td>14.3%</td><td>1022</td></tr>
+                    <tr><td>SONY</td><td>-78.6%</td><td>31.9%</td><td>13.0%</td><td>30.2%</td><td>9.4%</td><td>27.8%</td><td>19.8%</td><td>11.0%</td><td>27.3%</td><td>23.4%</td><td>1022</td></tr>
+                    <tr><td>WCN</td><td>-2.6%</td><td>24.0%</td><td>15.2%</td><td>9.4%</td><td>28.2%</td><td>29.6%</td><td>8.1%</td><td>17.9%</td><td>7.7%</td><td>23.0%</td><td>1022</td></tr>
+                    <tr><td>GJO</td><td>12.5%</td><td>-3.9%</td><td>7.6%</td><td>0.4%</td><td>2.4%</td><td>9.6%</td><td>6.7%</td><td>9.3%</td><td>0.6%</td><td>1.8%</td><td>1021</td></tr>
+                    <tr><td>ISRG</td><td>20.0%</td><td>-46.0%</td><td>25.1%</td><td>0.2%</td><td>26.1%</td><td>40.3%</td><td>28.0%</td><td>5.7%</td><td>17.1%</td><td>31.4%</td><td>1021</td></tr>
+                    <tr><td>PYT</td><td>11.3%</td><td>-3.6%</td><td>19.7%</td><td>3.7%</td><td>7.8%</td><td>2.3%</td><td>5.7%</td><td>0.4%</td><td>9.8%</td><td>9.4%</td><td>1021</td></tr>
+                    <tr><td>TVC</td><td>7.4%</td><td>-16.1%</td><td>12.2%</td><td>6.8%</td><td>5.4%</td><td>2.1%</td><td>0.8%</td><td>7.4%</td><td>1.8%</td><td>8.1%</td><td>1021</td></tr>
+                    <tr><td>AMZN</td><td>8.3%</td><td>36.0%</td><td>-19.2%</td><td>51.2%</td><td>20.8%</td><td>28.5%</td><td>30.8%</td><td>10.1%</td><td>41.5%</td><td>6.5%</td><td>1019</td></tr>
+                    <tr><td>BIO</td><td>1.8%</td><td>17.9%</td><td>-9.5%</td><td>19.1%</td><td>11.8%</td><td>28.1%</td><td>19.4%</td><td>17.7%</td><td>43.5%</td><td>18.4%</td><td>1019</td></tr>
+                    <tr><td>LULU</td><td>18.0%</td><td>0.4%</td><td>-65.9%</td><td>15.3%</td><td>14.1%</td><td>6.9%</td><td>56.3%</td><td>31.1%</td><td>36.0%</td><td>17.3%</td><td>1019</td></tr>
+                    <tr><td>MASI</td><td>5.7%</td><td>18.4%</td><td>-1.5%</td><td>36.4%</td><td>27.9%</td><td>37.3%</td><td>24.1%</td><td>20.7%</td><td>34.9%</td><td>17.2%</td><td>1019</td></tr>
+                    <tr><td>SCL</td><td>20.4%</td><td>19.6%</td><td>-31.3%</td><td>17.7%</td><td>26.5%</td><td>12.0%</td><td>4.4%</td><td>16.4%</td><td>17.0%</td><td>2.9%</td><td>1019</td></tr>
+                    <tr><td>SSD</td><td>1.0%</td><td>15.5%</td><td>-5.1%</td><td>14.4%</td><td>12.5%</td><td>24.5%</td><td>3.8%</td><td>31.9%</td><td>8.2%</td><td>22.0%</td><td>1019</td></tr>
+                    <tr><td>VRSK</td><td>31.2%</td><td>25.4%</td><td>-9.9%</td><td>12.9%</td><td>12.2%</td><td>4.1%</td><td>29.0%</td><td>17.6%</td><td>19.2%</td><td>14.4%</td><td>1019</td></tr>
+                    <tr><td>CHT</td><td>-1.9%</td><td>7.5%</td><td>-0.0%</td><td>5.9%</td><td>14.2%</td><td>4.1%</td><td>7.3%</td><td>7.9%</td><td>6.7%</td><td>8.2%</td><td>1018</td></tr>
+                    <tr><td>EXPD</td><td>-22.9%</td><td>20.4%</td><td>-4.7%</td><td>15.6%</td><td>4.8%</td><td>13.2%</td><td>14.2%</td><td>9.1%</td><td>18.6%</td><td>24.2%</td><td>1018</td></tr>
+                    <tr><td>MITK</td><td>-216.9%</td><td>39.7%</td><td>-91.0%</td><td>15.3%</td><td>51.6%</td><td>24.2%</td><td>2.9%</td><td>4.9%</td><td>22.6%</td><td>30.5%</td><td>1018</td></tr>
+                    <tr><td>AJG</td><td>16.1%</td><td>27.9%</td><td>3.6%</td><td>-5.7%</td><td>12.3%</td><td>25.9%</td><td>16.4%</td><td>20.5%</td><td>13.6%</td><td>34.9%</td><td>1015</td></tr>
+                    <tr><td>CNI</td><td>10.8%</td><td>22.7%</td><td>23.2%</td><td>-13.8%</td><td>4.6%</td><td>23.2%</td><td>7.4%</td><td>5.6%</td><td>11.4%</td><td>14.9%</td><td>1015</td></tr>
+                    <tr><td>COO</td><td>27.9%</td><td>25.8%</td><td>21.2%</td><td>-7.5%</td><td>13.5%</td><td>26.8%</td><td>7.0%</td><td>11.3%</td><td>8.8%</td><td>21.0%</td><td>1015</td></tr>
+                    <tr><td>CP</td><td>33.9%</td><td>36.4%</td><td>31.8%</td><td>-46.8%</td><td>2.7%</td><td>18.4%</td><td>16.2%</td><td>10.8%</td><td>24.8%</td><td>13.6%</td><td>1015</td></tr>
+                    <tr><td>DOV</td><td>6.8%</td><td>37.8%</td><td>5.8%</td><td>-20.5%</td><td>6.1%</td><td>31.5%</td><td>8.8%</td><td>22.0%</td><td>7.9%</td><td>30.3%</td><td>1015</td></tr>
+                    <tr><td>EGP</td><td>19.8%</td><td>21.3%</td><td>10.8%</td><td>-17.8%</td><td>20.5%</td><td>27.3%</td><td>8.2%</td><td>30.4%</td><td>1.9%</td><td>25.1%</td><td>1015</td></tr>
+                    <tr><td>ENZL</td><td>18.7%</td><td>17.0%</td><td>4.8%</td><td>-3.8%</td><td>17.9%</td><td>10.7%</td><td>3.0%</td><td>16.4%</td><td>14.0%</td><td>5.3%</td><td>1015</td></tr>
+                    <tr><td>GRMN</td><td>13.2%</td><td>22.4%</td><td>18.6%</td><td>-49.7%</td><td>30.2%</td><td>17.9%</td><td>17.2%</td><td>31.4%</td><td>12.2%</td><td>33.5%</td><td>1015</td></tr>
+                    <tr><td>IDXX</td><td>25.2%</td><td>10.8%</td><td>23.9%</td><td>-3.2%</td><td>36.0%</td><td>35.5%</td><td>21.7%</td><td>25.6%</td><td>32.9%</td><td>30.7%</td><td>1015</td></tr>
+                    <tr><td>JBHT</td><td>28.7%</td><td>22.5%</td><td>6.9%</td><td>-3.4%</td><td>7.4%</td><td>24.1%</td><td>4.6%</td><td>6.8%</td><td>4.3%</td><td>28.6%</td><td>1015</td></tr>
+                    <tr><td>LIN</td><td>6.2%</td><td>16.6%</td><td>2.9%</td><td>-10.8%</td><td>7.6%</td><td>21.8%</td><td>13.5%</td><td>18.2%</td><td>11.5%</td><td>26.4%</td><td>1015</td></tr>
+                    <tr><td>LNN</td><td>24.4%</td><td>0.1%</td><td>14.3%</td><td>-27.7%</td><td>14.8%</td><td>15.7%</td><td>5.5%</td><td>0.2%</td><td>11.5%</td><td>32.3%</td><td>1015</td></tr>
+                    <tr><td>LNT</td><td>12.4%</td><td>17.6%</td><td>18.7%</td><td>-1.4%</td><td>25.1%</td><td>14.8%</td><td>2.5%</td><td>21.9%</td><td>6.2%</td><td>1.8%</td><td>1015</td></tr>
+                    <tr><td>LSTR</td><td>12.2%</td><td>9.5%</td><td>26.0%</td><td>-15.2%</td><td>11.8%</td><td>28.3%</td><td>3.2%</td><td>12.1%</td><td>11.4%</td><td>21.3%</td><td>1015</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+</html>
